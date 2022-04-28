@@ -13,10 +13,10 @@ func TestGetBlock(t *testing.T) {
 		expectedResponse   *models.BlockDataResponse
 		expectToThrowError bool
 	}{
-		// "Block normal": {
-		// 	blockNumber:      11508993,
-		// 	expectedResponse: &models.BlockDataResponse{Transactions: 241, Amount: 1130.9870854468265},
-		// },
+		"Block normal": {
+			blockNumber:      11508993,
+			expectedResponse: &models.BlockDataResponse{Transactions: 241, Amount: 1130.9870854468265},
+		},
 
 		"Block with 0 transactions": {
 			blockNumber:        10,

@@ -3,7 +3,6 @@ package block
 import (
 	"encoding/json"
 	"ethservice/eth/models"
-	"fmt"
 	"log"
 	"math/big"
 
@@ -28,7 +27,7 @@ func ParseBlockData(rawBlockData []byte) (*models.BlockData, error) {
 	if err != nil {
 		return nil, errors.Wrap(err, "failed to unmarshal block data")
 	}
-	fmt.Println(Block.Result)
+
 	return &Block.Result, nil
 }
 
